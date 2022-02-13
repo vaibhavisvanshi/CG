@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-/*
-Collections.sort() function
-*/
+
 
 public class SortingArraylist {
 
@@ -17,6 +15,7 @@ public class SortingArraylist {
 		s.add("Madhu");
 		s.add("Sudhan");
 		System.out.println(s);
+		System.out.println("for loop:");
 		Iterator<String> itr = s.iterator();
 		if(itr!=null) {
 		while (itr.hasNext()) {
@@ -30,8 +29,15 @@ public class SortingArraylist {
 		if(itr1!=null) {
 		while (itr1.hasNext()) {
 			System.out.println(itr1.next());
+			
+			
 		}
 	}
+		System.out.println(" using enchanced loop  ");
+        for(String fruits:s) {
+		
+			System.out.println(fruits);
+        }
+}
+}
 
-}
-}
